@@ -1,0 +1,20 @@
+Comandos más importates de Git
+---------------------------------------------------------------------------------
+Configuración de Git
+git config --global user.name "William Muñoz"
+git config --global user.email "email@dom.com"
+
+git config --global -e  --> editar los datos globales de configuración
+git config --global -l  --> muestra los datos gloabesl de configuración
+
+---------------------------------------------------------------------------------
+
+git help comando --> comando que muestra ayuda de cualquier comando
+
+git init --> inizializa un repositorio en el entorno local
+
+git status --> muestra el estado de los cambios realizados
+
+git add <archivo> --> agrega el archivo al área staging
+
+git 
