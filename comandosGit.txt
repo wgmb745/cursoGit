@@ -8,6 +8,7 @@ git config --global -e  --> editar los datos globales de configuración
 git config --global -l  --> muestra los datos gloabesl de configuración
 
 ---------------------------------------------------------------------------------
+Trabajando con GIT
 
 git help comando --> comando que muestra ayuda de cualquier comando
 
@@ -17,4 +18,9 @@ git status --> muestra el estado de los cambios realizados
 
 git add <archivo> --> agrega el archivo al área staging
 
-git 
+git commit - m "descripción del cambio"
+
+git log --> permite ver los cambios realizados en cada commit ejecutado
+
+git rm --cached >> limpia los archivos que se encuentran en el espacio del stagin para no hacer un commit
+
