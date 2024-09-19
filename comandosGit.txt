@@ -17,6 +17,7 @@ git init --> inizializa un repositorio en el entorno local
 git status --> muestra el estado de los cambios realizados
 
 git add <archivo> --> agrega el archivo al área staging
+git add . --> agrega todos los cambios al área de staging
 
 git commit - m "descripción del cambio"
 
