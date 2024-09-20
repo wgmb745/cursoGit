@@ -4,24 +4,43 @@ Configuración de Git
 git config --global user.name "William Muñoz"
 git config --global user.email "email@dom.com"
 
-git config --global -e  --> editar los datos globales de configuración
-git config --global -l  --> muestra los datos gloabesl de configuración
+git config --global -e  				--> editar los datos globales de configuración
+git config --global -l  				--> muestra los datos gloabesl de configuración
 
 ---------------------------------------------------------------------------------
 Trabajando con GIT
 
-git help comando --> comando que muestra ayuda de cualquier comando
+git help comando 						--> comando que muestra ayuda de cualquier comando
 
-git init --> inizializa un repositorio en el entorno local
+git init 								--> inizializa un repositorio en el entorno local
 
-git status --> muestra el estado de los cambios realizados
+git status 								--> muestra el estado de los cambios realizados
 
-git add <archivo> --> agrega el archivo al área staging
-git add . --> agrega todos los cambios al área de staging
+git add <archivo> 						--> agrega el archivo al área staging
+git add . 								--> agrega todos los cambios al área de staging
 
-git commit - m "descripción del cambio"
+git branch <nombre rama>  				--> crear una rama
+git branch -D <nombre rama> 			--> fuerza el borrado de una rama
+git push origin --delete <nombre rama> 	--> borra una rama en el repositorio remoto
+git checkout <nombre rama> 				--> Cambiar de rama
 
-git log --> permite ver los cambios realizados en cada commit ejecutado
+git commit - m "descripción del cambio"	--> Sube los cambios al stage
 
-git rm --cached >> limpia los archivos que se encuentran en el espacio del stagin para no hacer un commit
+git merge <nombre rama>    				--> mezcla una rama con la principal
+git branch --merged						--> visualiza las ramas que estan mezcladas
+
+----------------------------------------------------------------------------
+				Eliminar la conexión entre un repositorio local con un repositorio remoto
+git remote rm destination
+
+----------------------------------------------------------------------------
+				Enlazar un repositorio local con un repositorio remoto
+git remote add origin https://github.com/wgmb745/cursoGit.git
+git branch -M main
+git push -u origin main
+----------------------------------------------------------------------------
+
+git log 			--> permite ver los cambios realizados en cada commit ejecutado
+
+git rm --cached 	-->> limpia los archivos que se encuentran en el espacio del stagin para no hacer un commit
 
